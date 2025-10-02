@@ -11,3 +11,78 @@ body {
 
 /* Optional: keep sections transparent over the image */
 header, section, footer { background: transparent; }
+
+/* Project Cards Container */
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr; /* default: single column */
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+/* Project Item */
+.project-item {
+  background: rgba(0, 0, 0, 0.6); /* semi-transparent over background image */
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* Title */
+.project-item h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+/* Tagline Subtitle */
+.project-item .tagline {
+  font-size: 0.95rem;
+  color: #cccccc;
+  font-style: italic;
+  margin: 0.3rem 0 0.8rem;
+}
+
+/* Description */
+.project-item p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #f0f0f0;
+}
+
+/* GitHub Button */
+.project-item a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #1e90ff;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.project-item a:hover {
+  background: #0d6efd;
+}
+
+/* Responsive Layout: two columns on tablets & up */
+@media (min-width: 768px) {
+  .project-list {
+    grid-template-columns: 1fr 1fr; /* two columns */
+  }
+}
+
+/* Responsive Layout: three columns on large desktops */
+@media (min-width: 1200px) {
+  .project-list {
+    grid-template-columns: 1fr 1fr 1fr; /* three columns */
+  }
+}
+

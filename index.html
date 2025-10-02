@@ -10,11 +10,11 @@
     <!-- Header Section -->
     <header>
         <nav>
-            <h1>Your Name</h1>
+            <h1>Thomas Cheek</h1>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#contact">Contact Me!</a></li>
             </ul>
         </nav>
     </header>
@@ -22,37 +22,107 @@
     <!-- Hero Section -->
     <section class="hero">
         <h2>Welcome to My Website</h2>
-        <p>A brief introduction about yourself and your expertise.</p>
+        <p class="tagline">CS @ SNHU • Developer focused on secure, user-friendly systems • ex-Finance Manager</p>
         <a href="#about" class="button">Learn More</a>
     </section>
 
     <!-- About Section -->
     <section id="about">
-        <h2>About Me</h2>
-        <p>Write a few sentences about yourself, your background, and what you do.</p>
+    <h2>About Me</h2>
+    <p>
+        Hi, I’m <strong>Thomas Cheek</strong> — a junior computer science student at
+        Southern New Hampshire University with a background in business and six years
+        in the automotive industry, where I worked my way up to Finance Manager.
+    </p>
+    <p>
+        These days, I’m focused on <em>software engineering</em>,
+        <em>cybersecurity</em>, and <em>embedded systems</em>. I enjoy building
+        practical, user-friendly, and secure solutions — from database-driven web
+        apps and embedded device projects to AI experiments.
+    </p>
+    <p>
+        My goal is to combine technical expertise with real-world business
+        experience to help teams build systems that solve problems and make an
+        impact.
+    </p>
+    <p class="skills">
+        <strong>Skills:</strong> C++ • Python • Java • Web Development (HTML, CSS,
+        JavaScript) • MongoDB • Git/GitHub • Secure Coding • Embedded Systems
+    </p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <div class="project-item">Project 1</div>
-            <div class="project-item">Project 2</div>
-            <div class="project-item">Project 3</div>
+    <h2>Projects</h2>
+    <div class="project-list">
+    
+        <!-- Projects Section -->
+    <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+
+        <!-- Project 1 -->
+        <div class="project-item">
+        <h3>InventoryApp</h3>
+        <p class="tagline">Cross-platform inventory management app built with Java + SQLite</p>
+        <p>
+            A cross-platform inventory management application with login/registration, 
+            item tracking, and persistent data storage. Built with <strong>Java</strong> 
+            and <strong>SQLite</strong>, it provides a simple and efficient way to manage 
+            inventory data securely on mobile devices.
+        </p>
+        <a href="https://github.com/DeviousFate/InventoryApp" target="_blank">View on GitHub</a>
         </div>
+
+        <!-- Project 2 -->
+        <div class="project-item">
+        <h3>Travlr Getaways Web App</h3>
+        <p class="tagline">Full-stack MEAN travel booking platform with admin dashboard</p>
+        <p>
+            A full-stack travel booking site built with the <strong>MEAN stack</strong> 
+            (MongoDB, Express, React, Node). Features a responsive customer-facing interface 
+            for browsing trips and an admin dashboard for managing travel packages. 
+            Includes REST APIs and secure database integration.
+        </p>
+        <a href="https://github.com/DeviousFate/cs465-fullstack" target="_blank">View on GitHub</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-item">
+        <h3>Smart Thermostat (Embedded Systems)</h3>
+        <p class="tagline">IoT thermostat on Raspberry Pi with secure coding focus</p>
+        <p>
+            An <strong>IoT thermostat</strong> developed on Raspberry Pi using 
+            <strong>C++</strong> and <strong>Python</strong>. Integrates an AHT20 
+            temperature sensor with custom heating/cooling logic. Emphasized 
+            <strong>secure coding</strong> practices to prevent overflow errors, 
+            improve reliability, and ensure safe hardware interactions.
+        </p>
+        <a href="https://github.com/DeviousFate/CS350-Smart-Thermostat" target="_blank">View on GitHub</a>
+        </div>
+
+    </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Let people know how they can reach you.</p>
-        <form action="#" method="post">
-            <input type="text" name="name" placeholder="Thomas Cheek">
-            <input type="email" name="email" placeholder="cheekdylan13@gmail.com">
-            <textarea name="message" placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+    <h2>Contact Me</h2>
+    <p>Have a question or want to connect? Send me a message below:</p>
+
+    <form action="https://formspree.io/f/xyznjdrv" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
     </section>
+
 
     <footer>
         <p>&copy; 2025 Thomas Cheek. All rights reserved.</p>
