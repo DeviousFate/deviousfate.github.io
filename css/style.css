@@ -5,9 +5,11 @@ body {
   font-family: Arial, sans-serif;
 
   /* absolute path from your site root */
-  background: url("/images/coolbackgrounds-particles-compute.png") no-repeat center center fixed;
+  body {
+  background: url("/images/bg.png") no-repeat center center fixed;
   background-size: cover;
-  color: #f0f0f0;
+  /* color: #f0f0f0; */
+    }
 }
 
 /* quick legibility */
