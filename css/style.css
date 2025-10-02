@@ -86,3 +86,31 @@ header, section, footer { background: transparent; }
   }
 }
 
+/* Page Layout */
+.container {
+  max-width: 1000px;      /* keeps content readable */
+  margin: 0 auto;         /* centers horizontally */
+  padding: 0 1.5rem;      /* space on left/right */
+}
+
+/* General Text Alignment */
+body {
+  text-align: left;       /* keeps text left-aligned inside container */
+}
+
+/* Hero Section Centering */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+h1, h2, h3 {
+  color: #ffffff; /* white against dark background */
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
