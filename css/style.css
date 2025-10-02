@@ -1,16 +1,13 @@
 /* css/style.css */
 html, body { height: 100%; }
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-
-  /* absolute path from your site root */
-  body {
   background: url("/images/bg.png") no-repeat center center fixed;
   background-size: cover;
-  /* color: #f0f0f0; */
-    }
+  color: #f0f0f0; /* keep text readable */
 }
 
-/* quick legibility */
+/* Optional: keep sections transparent over the image */
 header, section, footer { background: transparent; }
