@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* Background image setup */
+    background: url("images/coolbackgrounds-particles-compute.png") no-repeat center center fixed;
+    background-size: cover;
+    /* Adjust text color for readability */
+    color: #f0f0f0;
+}
