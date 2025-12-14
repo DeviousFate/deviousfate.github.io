@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone | BeaedCorpusExpress</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <h1>Thomas 'Dylan' Cheek</h1>
+            <ul>
+                <li><a href="index.html#about">About Me</a></li>
+                <li><a href="index.html#projects">My Projects</a></li>
+                <li><a href="capstone.html">Capstone</a></li>
+                <li><a href="index.html#contact">Contact Me!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>BeaedCorpusExpress Capstone</h2>
+        <p class="tagline">Industrial tag maker web presence: responsive site, lead capture, fast load.</p>
+        <a href="#overview" class="button btn">Overview</a>
+    </section>
+
+    <section id="overview">
+        <h2>Overview</h2>
+        <p>
+            BeaedCorpusExpress is a responsive site for an industrial tag manufacturer serving energy and manufacturing clients.
+            It highlights materials (stainless, brass, plastics), engraving and printing options, barcodes and serialization, and a clear lead-capture path for quotes.
+        </p>
+        <p>
+            Role: end-to-end design and build. Goals: showcase capabilities, keep load fast on mobile, and make it easy for procurement teams to request quotes.
+        </p>
+    </section>
+
+    <section id="tech-stack">
+        <h2>Tech Stack</h2>
+        <ul>
+            <li>HTML5/CSS3 with responsive grid/layout</li>
+            <li>JavaScript for navigation and call-to-action behavior</li>
+            <li>Lead-capture CTA tuned for procurement outreach</li>
+            <li>Performance practices: compressed imagery and caching-friendly assets</li>
+            <li>Accessibility focus: semantic sections, clear contrast, and descriptive alt text</li>
+        </ul>
+    </section>
+
+    <section id="features">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Materials and engraving/printing options called out for quick scanning</li>
+            <li>Service tiers and use cases tailored to energy and manufacturing buyers</li>
+            <li>Mobile-friendly contact paths with a prominent quote request CTA</li>
+            <li>Clean typography and spacing to keep information dense but readable</li>
+        </ul>
+    </section>
+
+    <section id="enhancement-one">
+        <h2>Enhancement One: Software Design and Engineering</h2>
+        <p>
+            This fullstack sign configurator and order portal, conceived in October 2025, was built for a company making standard and custom industrial-grade tags and placards. It shows my ability to design, implement, and refine a complete software solution end to end.
+        </p>
+        <p>
+            From a design and engineering lens, I modeled business rules (size-to-price mappings, category estimators) as a single source of truth, then paired them with a responsive UI that includes live SVG previews, dynamic cards, and clear navigation between portfolio and capstone pages. I added validation, defensive DOM handling, client-side PDF proof generation with email workflows, and kept accessibility in mind by separating data, logic, rendering, and side effects.
+        </p>
+        <p>
+            This refactor sharpened how I communicate design intent, align shared components for collaboration, and keep a security-aware mindset in client-side handling under tight timelines.
+        </p>
+        <div class="project-links">
+            <a class="btn" href="https://github.com/DeviousFate/BeaedCorpusExpress/tree/5ddbaa61f3266a295e1f9a05bd6b14c0c5e53eb2" target="_blank" rel="noopener noreferrer">Repo snapshot (design work)</a>
+        </div>
+    </section>
+
+    <section id="enhancement-two">
+        <h2>Enhancement Two: Algorithms and Data Structure</h2>
+        <p>
+            This enhancement focuses on the algorithmic core of the same sign configurator: a browser-based designer with live SVG preview backed by a Node/Express API.
+        </p>
+        <p>
+            I organized business rules into data-driven tables for size and category pricing, built a shared quote engine for client/server consistency, and added a classifier to streamline product selection. A font-fit layout algorithm dynamically adjusts text in the SVG to keep it readable and properly scaled. Modular pricing logic, session-based auth, and order handling replaced ad hoc UI code with reusable compute layers.
+        </p>
+        <p>
+            These structured algorithms demonstrate applying CS principles, managing trade-offs for reliability and scalability, and using shared logic and tooling to deliver consistent results even while the backend was taking shape.
+        </p>
+        <div class="project-links">
+            <a class="btn" href="https://github.com/DeviousFate/BeaedCorpusExpress/tree/29331b18afe35e484e4085ff508085248cdf5438" target="_blank" rel="noopener noreferrer">Repo snapshot (algorithms/data structures)</a>
+        </div>
+    </section>
+
+    <section id="enhancement-three">
+        <h2>Enhancement Three: Databases</h2>
+        <p>
+            This iteration spotlights database integration for the same industrial tag configurator. It moves the app from static data to structured persistence and retrieval.
+        </p>
+        <p>
+            I wired in MongoDB to store quotes and product data, keeping size-to-price mappings and estimators as a single source of truth while the UI stayed responsive with live SVG previews and dynamic cards. Validation, defensive DOM handling, and client-side PDF proof generation now sit on top of persisted data, tested via Postman to ensure consistent behavior across scenarios.
+        </p>
+        <p>
+            Tackling databases strengthened my use of modern tools, reinforced a security-minded approach to data persistence and API design, and improved how I document and test for teams that rely on accurate data to make decisions.
+        </p>
+        <div class="project-links">
+            <a class="btn" href="https://github.com/DeviousFate/BeaedCorpusExpress/tree/449046791ba62283350455cba5af751a3cab0cf5" target="_blank" rel="noopener noreferrer">Repo snapshot (database work)</a>
+        </div>
+    </section>
+
+    <section id="course-outcomes">
+        <h2>Course Outcomes</h2>
+        <ul>
+            <li>Collaborative environments: shared data models, reusable components, and repo documentation that help diverse stakeholders align on requirements and decisions.</li>
+            <li>Professional communications: clear UI copy, live SVG previews, and written/narrative artifacts that adapt technical details for technical and non-technical audiences.</li>
+            <li>Algorithmic solutions with trade-offs: data-driven pricing tables, quote engine, classifier, and font-fit layout tuned for readability, performance, and maintainability.</li>
+            <li>Techniques, skills, and tools: Node/Express API, MongoDB persistence, live SVG rendering, client-side PDF proofs, and Postman-backed testing to deliver business value for industrial tagging.</li>
+            <li>Security mindset: input validation, defensive DOM handling, session-aware flows, and cautious data handling to reduce vulnerabilities and protect user and quote data.</li>
+        </ul>
+    </section>
+
+    <section id="outcomes">
+        <h2>Outcomes & Takeaways</h2>
+        <ul>
+            <li>Delivered a fast-loading, responsive site suitable for field devices</li>
+            <li>Streamlined the inquiry flow for procurement teams needing quick quotes</li>
+            <li>Reinforced secure coding practices and asset hygiene during deployment</li>
+        </ul>
+    </section>
+
+    <section id="links">
+        <h2>Links</h2>
+        <div class="project-links">
+            <a class="btn" href="https://github.com/DeviousFate/BeaedCorpusExpress" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            <a class="btn" href="https://youtu.be/1_9hkrB_zKw" target="_blank" rel="noopener noreferrer">Code Review</a>
+            <a class="btn" href="index.html#projects">Back to Portfolio</a>
+            <a class="btn" href="index.html#contact">Contact Me</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Thomas Cheek. All rights reserved.</p>
+    </footer>
+    </div>
+</body>
+</html>

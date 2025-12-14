@@ -42,16 +42,24 @@ nav a:hover { text-decoration: underline; }
   text-align: center;
   padding: 4rem 0 3rem;
 }
-.hero .button,
-.project-item a {
+
+/* ---------- Buttons ---------- */
+.btn {
   display: inline-block;
   padding: .6rem 1rem;
-  background: #1e90ff; color: #fff; text-decoration: none;
-  border-radius: 8px; font-weight: 600;
-  transition: transform .15s ease, background .15s ease;
+  background: #1e90ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0,0,0,.3);
+  transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
 }
-.hero .button:hover,
-.project-item a:hover { background:#0d6efd; transform: translateY(-1px); }
+.btn:hover {
+  background: #0d6efd;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0,0,0,.35);
+}
 
 /* ---------- Projects (cards) ---------- */
 .project-list {
@@ -101,3 +109,11 @@ footer { text-align: center; padding: 2rem 0 3rem; color:#c9c9d0; }
 
 /* Optional: tidy up any stray generic .button elements */
 .button { cursor: pointer; }
+
+/* ---------- Link buttons (capstone repo links, etc.) ---------- */
+.project-links {
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+  margin-top: .75rem;
+}
