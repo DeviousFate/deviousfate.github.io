@@ -1,150 +1,233 @@
-﻿<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomas C. ePortfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Thomas Cheek is a software developer building full-stack applications, business tools, APIs, and Foundry VTT modules.">
+    <meta name="theme-color" content="#08110f">
+    <meta property="og:title" content="Thomas Cheek — Software Developer">
+    <meta property="og:description" content="Full-stack applications, practical business tools, and game-system automation built with care.">
+    <meta property="og:type" content="website">
+    <title>Thomas Cheek | Software Developer</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
-    <div class="container">
-    <!-- Header Section -->
-    <header>
-        <nav>
-            <h1>Thomas C.</h1>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">My Projects</a></li>
-                <li><a href="capstone.html">Capstone</a></li>
-                <li><a href="#contact">Contact Me!</a></li>
-            </ul>
-        </nav>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" data-header>
+        <div class="shell nav-wrap">
+            <a class="brand" href="#top" aria-label="Thomas Cheek, home">
+                <span class="brand-mark" aria-hidden="true">TC</span>
+                <span>Thomas Cheek</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+                <span class="sr-only">Toggle navigation</span>
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+                <a href="#work">Work</a>
+                <a href="showcase.html">In Action</a>
+                <a href="#about">About</a>
+                <a class="nav-cta" href="#contact">Let’s talk</a>
+            </nav>
+        </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h2>Welcome to My ePortfolio</h2>
-        <p class="tagline">Software engineer | CS @ SNHU 2025 | Ex-finance manager bridging product and engineering</p>
-        <a href="#about" class="button btn">Learn More</a>
-    </section>
+    <main id="main-content">
+        <section class="hero shell" id="top">
+            <div class="hero-copy reveal">
+                <p class="eyebrow"><span class="status-dot"></span> Available for freelance and software engineering opportunities</p>
+                <h1>I build useful software for <span>real-world complexity.</span></h1>
+                <p class="hero-lede">I’m Thomas. After six years in automotive finance, I changed careers to build software—turning operational problems into clear, maintainable products, from commercial credit analysis to game-system automation.</p>
+                <div class="button-row">
+                    <a class="btn btn-primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
+                    <a class="btn btn-secondary" href="https://github.com/DeviousFate" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+            <aside class="hero-panel reveal" aria-label="Developer profile">
+                <div class="terminal-bar" aria-hidden="true"><i></i><i></i><i></i><span>thomas.profile</span></div>
+                <dl class="profile-grid">
+                    <div><dt>Role</dt><dd>Software developer</dd></div>
+                    <div><dt>Focus</dt><dd>Full-stack · APIs · automation</dd></div>
+                    <div><dt>Career arc</dt><dd>Finance → software engineering</dd></div>
+                    <div><dt>Working style</dt><dd>Independent · collaborative</dd></div>
+                </dl>
+                <div class="code-line"><span>const</span> approach = [<em>"practical"</em>, <em>"secure"</em>, <em>"clear"</em>];</div>
+            </aside>
+        </section>
 
-    <!-- About Section -->
-    <section id="about">
-    <h2>About Me</h2>
-    <p>
-        Hi, I'm <strong>Thomas C.</strong> - a software engineer with a business background and six years in automotive finance. I bridge product, engineering, and stakeholders to ship reliable systems.
-    </p>
-    <p>
-        I focus on secure software engineering and embedded/IoT. Recent work spans a Java + SQLite inventory app, a MEAN travel booking platform with REST APIs, and a Raspberry Pi thermostat built with C++/Python and secure coding practices. I've also trained a small LLM with open-source tooling, strengthening my ML and data preprocessing chops.
-    </p>
-    <p>
-        My goal is to pair technical depth with clear communication so teams can deliver secure, practical products that solve real problems.
-    </p>
-    <p class="skills">
-        <strong>Skills:</strong> C++ | Python | Java | JavaScript/TypeScript | React | Node/Express | HTML/CSS | SQL/MongoDB | Git/GitHub | Docker | Linux | Secure Coding | Embedded Systems
-    </p>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-list">
-
-        <!-- Project 1 -->
-        <div class="project-item">
-        <h3>InventoryApp</h3>
-        <p class="tagline">Cross-platform inventory management app built with Java + SQLite</p>
-        <p>
-            A cross-platform inventory management application with login/registration, 
-            item tracking, and persistent data storage. Built with <strong>Java</strong> 
-            and <strong>SQLite</strong>, it provides a simple and efficient way to manage 
-            inventory data securely on mobile devices.
-        </p>
-        <a class="btn" href="https://github.com/DeviousFate/InventoryApp" target="_blank">View on GitHub</a>
+        <div class="ticker" aria-label="Core technologies">
+            <div class="ticker-track">
+                <span>React</span><i>✦</i><span>TypeScript</span><i>✦</i><span>Python</span><i>✦</i><span>FastAPI</span><i>✦</i><span>Node.js</span><i>✦</i><span>SQL</span><i>✦</i><span>Docker</span><i>✦</i><span>Secure development</span>
+            </div>
         </div>
 
-        <!-- Project 2 -->
-        <div class="project-item">
-        <h3>Travlr Getaways Web App</h3>
-        <p class="tagline">Full-stack MEAN travel booking platform with admin dashboard</p>
-        <p>
-            A full-stack travel booking site built with the <strong>MEAN stack</strong> 
-            (MongoDB, Express, React, Node). Features a responsive customer-facing interface 
-            for browsing trips and an admin dashboard for managing travel packages. 
-            Includes REST APIs and secure database integration.
-        </p>
-        <a class="btn" href="https://github.com/DeviousFate/cs465-fullstack" target="_blank">View on GitHub</a>
-        </div>
+        <section class="section shell" id="work">
+            <div class="section-heading reveal">
+                <div>
+                    <p class="eyebrow">Selected work · Ranked by engineering scope</p>
+                    <h2>Projects that show the work.</h2>
+                </div>
+                <p>Ordered by the breadth and depth of skills each project demonstrates—from system architecture to focused automation and tooling.</p>
+            </div>
 
-        <!-- Project 3 -->
-        <div class="project-item">
-        <h3>Smart Thermostat (Embedded Systems)</h3>
-        <p class="tagline">IoT thermostat on Raspberry Pi with secure coding focus</p>
-        <p>
-            An <strong>IoT thermostat</strong> developed on Raspberry Pi using 
-            <strong>C++</strong> and <strong>Python</strong>. Integrates an AHT20 
-            temperature sensor with custom heating/cooling logic. Emphasized 
-            <strong>secure coding</strong> practices to prevent overflow errors, 
-            improve reliability, and ensure safe hardware interactions.
-        </p>
-        <a class="btn" href="https://github.com/DeviousFate/CS350-Smart-Thermostat" target="_blank">View on GitHub</a>
-        </div>
+            <div class="featured-work">
+                <article class="project project-featured reveal">
+                    <div class="project-index">01</div>
+                    <div class="project-copy">
+                        <div class="project-meta"><span>Featured build</span><span>Full-stack</span></div>
+                        <h3>Northstar Credit</h3>
+                        <p class="project-summary">An explainable commercial credit-analysis and portfolio-monitoring workspace built for transparent, human-reviewed decisions.</p>
+                        <ul class="feature-list">
+                            <li>Deterministic underwriting and interactive stress testing</li>
+                            <li>Portfolio exposure, concentration, and exception views</li>
+                            <li>Containerized deployment with Google Cloud adapters</li>
+                        </ul>
+                        <p class="skill-proof"><strong>Demonstrates</strong> End-to-end architecture, financial domain modeling, API design, testing, containers, and cloud deployment.</p>
+                        <div class="tech-list" aria-label="Technologies"><span>React</span><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span></div>
+                        <a class="text-link" href="https://github.com/DeviousFate/Northstar-POC" target="_blank" rel="noopener noreferrer">View the repository <span aria-hidden="true">↗</span></a>
+                    </div>
+                    <div class="northstar-visual" aria-hidden="true">
+                        <div class="visual-top"><span>Northstar / Portfolio</span><span class="live-pill">● Monitored</span></div>
+                        <div class="metric-row"><div><small>Total exposure</small><strong>$4.82M</strong><span>Across 18 relationships</span></div><div><small>Weighted risk</small><strong>2.4</strong><span>Moderate · stable</span></div></div>
+                        <div class="chart"><span style="height:28%"></span><span style="height:44%"></span><span style="height:38%"></span><span style="height:61%"></span><span style="height:54%"></span><span style="height:76%"></span><span style="height:70%"></span><span style="height:88%"></span></div>
+                        <div class="visual-foot"><span>Stress scenario</span><strong>Revenue −10%</strong><span class="neutral-pill">Review</span></div>
+                    </div>
+                </article>
 
-        <!-- Project 4 -->
-        <div class="project-item">
-        <h3>BeaedCorpusExpress</h3>
-        <p class="tagline">Web presence for a Corpus Christi industrial tag maker</p>
-        <p>
-            Designed and built a responsive site for a business producing industrial tags for corporate 
-            clients across energy and manufacturing. Highlights materials (stainless, brass, plastics), 
-            engraving/printing options, barcodes/serialization, and a lead-capture CTA for quotes. Focused 
-            on clear service tiers, fast load, and mobile-friendly contact paths for procurement teams.
-        </p>
-        <a class="btn" href="https://github.com/DeviousFate/BeaedCorpusExpress" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-        <a class="btn" href="https://youtu.be/1_9hkrB_zKw" target="_blank" rel="noopener noreferrer">Code Review</a>
-        <a class="btn" href="capstone.html">Capstone Details</a>
-        </div>
+                <div class="project-grid">
+                    <article class="project reveal">
+                        <div class="project-index">02</div>
+                        <div class="project-meta"><span>Foundry VTT</span><span>Operations platform</span></div>
+                        <h3>Galactic Operations Console</h3>
+                        <p>A real-time campaign operations module with hyperspace routing, live location and vessel state, permissions, synchronized GM controls, and a data-rich interactive galaxy map.</p>
+                        <p class="skill-proof"><strong>Demonstrates</strong> Stateful client synchronization, pathfinding, access control, modular architecture, data pipelines, and automated tests.</p>
+                        <div class="tech-list"><span>JavaScript</span><span>Foundry APIs</span><span>Node testing</span><span>Python tooling</span></div>
+                        <a class="text-link" href="https://github.com/DeviousFate/Galactic_Operations_Console" target="_blank" rel="noopener noreferrer">View the repository <span aria-hidden="true">↗</span></a>
+                    </article>
 
-        <!-- Project 5 -->
-        <div class="project-item">
-        <h3>Battle Brothers: Kyber & Contracts</h3>
-        <p class="tagline">Work-in-progress: OT-era total conversion with rare force users</p>
-        <p>
-            Targeting modern BB builds with a random force-sensitivity seed reminiscent of SWGalaxies, 
-            OT-aligned factions, and unique sabers/armor itemization. Planned Jedi training unlocks via 
-            faction rep, tiered ability points, and crises like Imperial Crackdown or Cartel War to pressure 
-            a ~250-day campaign. 
-            Focus areas: world gen, AI/encounter tables, loot/economy, and event chains.
-        </p>
-        </div>
+                    <article class="project reveal">
+                        <div class="project-index">03</div>
+                        <div class="project-meta"><span>Productivity</span><span>Full-stack workflow</span></div>
+                        <h3>RoleSentry</h3>
+                        <p>A self-hosted job application tracker that imports listings from URLs, monitors whether roles stay active, and follows every application from first submission to final outcome.</p>
+                        <p class="skill-proof"><strong>Demonstrates</strong> Modern React architecture, typed application code, background workers, web extraction, persistence, and self-hosted deployment.</p>
+                        <div class="tech-list"><span>Next.js</span><span>TypeScript</span><span>Express</span><span>MongoDB</span><span>Docker</span></div>
+                        <a class="text-link" href="https://github.com/DeviousFate/RoleSentry" target="_blank" rel="noopener noreferrer">View the repository <span aria-hidden="true">↗</span></a>
+                    </article>
 
-    </div>
-    </section>
+                    <article class="project reveal">
+                        <div class="project-index">04</div>
+                        <div class="project-meta"><span>Foundry VTT</span><span>Rules engine</span></div>
+                        <h3>SW5e Variant Rules</h3>
+                        <p>A production-minded Foundry module that gives game masters precise control over complex variant rules—from wounds and armor to force alignment, initiative, and character progression.</p>
+                        <p class="skill-proof"><strong>Demonstrates</strong> Complex domain modeling, event-driven hooks, third-party compatibility, idempotent workflows, and configurable automation.</p>
+                        <div class="tech-list"><span>JavaScript</span><span>Foundry VTT v13</span><span>Integration design</span></div>
+                        <a class="text-link" href="https://github.com/DeviousFate/SW5e-Variant-Rules" target="_blank" rel="noopener noreferrer">View the repository <span aria-hidden="true">↗</span></a>
+                    </article>
 
-    <!-- Contact Section -->
-    <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Have a question or want to connect? Send me a message below:</p>
+                    <article class="project reveal">
+                        <div class="project-index">05</div>
+                        <div class="project-meta"><span>Client project</span><span>Product configurator</span></div>
+                        <h3>Industrial Marking Configurator</h3>
+                        <p>A custom industrial-tag storefront and order workflow with data-driven pricing, live SVG previews, quote generation, and persistent product data.</p>
+                        <p class="skill-proof"><strong>Demonstrates</strong> Requirements translation, reusable business rules, responsive UX, dynamic SVG rendering, and database integration.</p>
+                        <div class="tech-list"><span>Node.js</span><span>MongoDB</span><span>SVG</span><span>PDF workflows</span></div>
+                        <div class="inline-links">
+                            <a class="text-link" href="https://github.com/DeviousFate/industrial-marking-configurator" target="_blank" rel="noopener noreferrer">Repository <span aria-hidden="true">↗</span></a>
+                            <a class="text-link" href="showcase.html#industrial-marking">See it in action <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
 
-    <form action="https://formspree.io/f/xyznjdrv" method="POST">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <article class="project reveal">
+                        <div class="project-index">06</div>
+                        <div class="project-meta"><span>Foundry VTT</span><span>Campaign tooling</span></div>
+                        <h3>Ashes of Velsar</h3>
+                        <p>A complete SW5e adventure module packaging fifteen mapped scenes, campaign journals, handouts, actors, encounters, and import tooling for Foundry VTT.</p>
+                        <p class="skill-proof"><strong>Demonstrates</strong> Structured content pipelines, asset processing, package automation, system integration, and release-ready documentation.</p>
+                        <div class="tech-list"><span>JavaScript</span><span>Content pipeline</span><span>Build tooling</span></div>
+                        <a class="text-link" href="https://github.com/DeviousFate/Ashes-of-Velsar" target="_blank" rel="noopener noreferrer">View the repository <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        <section class="section about-section" id="about">
+            <div class="shell about-grid">
+                <div class="section-heading stacked reveal">
+                    <p class="eyebrow">About me</p>
+                    <h2>From financing decisions to engineering better systems.</h2>
+                </div>
+                <div class="about-copy reveal">
+                    <p class="lead">My path into software started on the business side. Six years in automotive finance taught me how to evaluate risk, earn trust, explain complicated decisions, and keep work moving when the stakes were real.</p>
+                    <p>That experience also showed me how much better the work could be when the software truly fit the people and process. I followed that curiosity into computer science and found the work I wanted to keep doing: designing systems, solving technical problems, and turning an idea into something useful.</p>
+                    <p>I earned my B.S. in Computer Science from Southern New Hampshire University in 2025, with an emphasis on software engineering and secure coding. Today I bring both sides of that career to full-stack development—business context from finance and the engineering depth to build the solution.</p>
+                </div>
+                <div class="career-path reveal" aria-label="Career path from automotive finance to software engineering">
+                    <article>
+                        <span class="career-marker">01</span>
+                        <p class="career-stage">Foundation</p>
+                        <h3>Automotive finance</h3>
+                        <p>Six years working with risk, revenue, customers, and high-pressure operational decisions.</p>
+                    </article>
+                    <div class="career-arrow" aria-hidden="true"><span></span><b>Transferable skills</b></div>
+                    <article>
+                        <span class="career-marker">02</span>
+                        <p class="career-stage">The pivot</p>
+                        <h3>Computer science</h3>
+                        <p>A 2025 degree grounded the transition in algorithms, secure coding, systems, and software design.</p>
+                    </article>
+                    <div class="career-arrow" aria-hidden="true"><span></span><b>Built with purpose</b></div>
+                    <article class="career-current">
+                        <span class="career-marker">03</span>
+                        <p class="career-stage">Now</p>
+                        <h3>Software engineering</h3>
+                        <p>Full-stack products, APIs, automation, and domain-heavy tools shaped by real business context.</p>
+                    </article>
+                </div>
+                <div class="capability-grid reveal">
+                    <div><span>01</span><h3>Product engineering</h3><p>From problem framing and interface design through APIs, persistence, testing, and deployment.</p></div>
+                    <div><span>02</span><h3>Domain translation</h3><p>Turning business rules and stakeholder needs into software people can understand and use.</p></div>
+                    <div><span>03</span><h3>Secure foundations</h3><p>Defensive input handling, responsible data practices, clear boundaries, and maintainable code.</p></div>
+                </div>
+            </div>
+        </section>
 
-        <label for="message">Your Message:</label>
-        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+        <section class="section shell archive-section" aria-labelledby="archive-title">
+            <div class="section-heading reveal">
+                <div><p class="eyebrow">Earlier work</p><h2 id="archive-title">The foundation.</h2></div>
+                <p>Selected projects from my computer science program that built depth across mobile, embedded, full-stack, and intelligent systems.</p>
+            </div>
+            <div class="archive-list reveal">
+                <a href="https://github.com/DeviousFate/InventoryApp" target="_blank" rel="noopener noreferrer"><span>Android inventory management</span><em>Java · SQLite</em><b>↗</b></a>
+                <a href="https://github.com/DeviousFate/CS350-Smart-Thermostat" target="_blank" rel="noopener noreferrer"><span>Raspberry Pi smart thermostat</span><em>Python · Embedded systems</em><b>↗</b></a>
+                <a href="https://github.com/DeviousFate/cs465-fullstack" target="_blank" rel="noopener noreferrer"><span>Travlr Getaways</span><em>Angular · Express · MongoDB · Node</em><b>↗</b></a>
+                <a href="https://github.com/DeviousFate/Pirate-Intelligent-Agent" target="_blank" rel="noopener noreferrer"><span>Reinforcement learning agent</span><em>Python · Jupyter</em><b>↗</b></a>
+            </div>
+        </section>
 
-        <button type="submit">Send Message</button>
-    </form>
-    </section>
+        <section class="contact-section" id="contact">
+            <div class="shell contact-grid">
+                <div class="reveal">
+                    <p class="eyebrow">Start a conversation</p>
+                    <h2>Have a hard problem worth solving?</h2>
+                    <p>I’m open to freelance work and software engineering opportunities. Tell me what you’re building, fixing, or trying to understand.</p>
+                    <a class="github-link" href="https://github.com/DeviousFate" target="_blank" rel="noopener noreferrer">github.com/DeviousFate <span aria-hidden="true">↗</span></a>
+                </div>
+                <form class="contact-form reveal" action="https://formspree.io/f/xyznjdrv" method="post">
+                    <div class="field"><label for="name">Name</label><input type="text" id="name" name="name" autocomplete="name" placeholder="Your name" required></div>
+                    <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required></div>
+                    <div class="field"><label for="message">What can I help with?</label><textarea id="message" name="message" placeholder="A little about your project or opportunity..." required></textarea></div>
+                    <button class="btn btn-primary" type="submit">Send message <span aria-hidden="true">→</span></button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-
-    <footer>
-        <p>&copy; 2025 Thomas C.. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="shell"><p>© <span data-year>2026</span> Thomas Cheek</p><p>Built with curiosity and a bias toward useful things.</p><a href="#top">Back to top ↑</a></div>
     </footer>
-    </div>
 </body>
 </html>

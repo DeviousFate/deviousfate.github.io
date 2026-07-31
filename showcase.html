@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="See Thomas Cheek's software projects in action through representative product workflows and interface previews.">
+    <meta name="theme-color" content="#08110f">
+    <meta property="og:title" content="Projects in Action | Thomas Cheek">
+    <meta property="og:description" content="Full-stack products, operational tools, and automation shown through the workflows they enable.">
+    <meta property="og:type" content="website">
+    <title>Projects in Action | Thomas Cheek</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header scrolled" data-header>
+        <div class="shell nav-wrap">
+            <a class="brand" href="index.html" aria-label="Thomas Cheek, home">
+                <span class="brand-mark" aria-hidden="true">TC</span>
+                <span>Thomas Cheek</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+                <span class="sr-only">Toggle navigation</span>
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+                <a href="index.html#work">Work</a>
+                <a href="showcase.html" aria-current="page">In Action</a>
+                <a href="index.html#about">About</a>
+                <a class="nav-cta" href="index.html#contact">Let’s talk</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="showcase-hero shell">
+            <p class="eyebrow reveal">Portfolio repos · In action</p>
+            <h1 class="reveal">See what the software <span>actually does.</span></h1>
+            <p class="hero-lede reveal">A closer look at the workflows, decisions, and interactions behind my strongest repositories. These code-native previews represent real behavior documented in each project.</p>
+            <nav class="showcase-jump reveal" aria-label="Jump to a project">
+                <a href="#northstar"><span>01</span> Northstar</a>
+                <a href="#galactic"><span>02</span> Galactic Console</a>
+                <a href="#rolesentry"><span>03</span> RoleSentry</a>
+                <a href="#sw5e"><span>04</span> Variant Rules</a>
+                <a href="#industrial-marking"><span>05</span> Marking Configurator</a>
+                <a href="#velsar"><span>06</span> Ashes of Velsar</a>
+            </nav>
+        </section>
+
+        <section class="demo-section" id="northstar">
+            <div class="shell demo-layout">
+                <div class="demo-copy reveal">
+                    <p class="demo-number">01 / Full-stack credit analysis</p>
+                    <h2>Northstar Credit</h2>
+                    <p class="demo-lede">An analyst moves from borrower intake to an explainable recommendation, then tests how the decision changes under pressure.</p>
+                    <ol class="workflow-list">
+                        <li><span>01</span><div><strong>Spread the financials</strong><p>Capture the latest fiscal period and calculate the ratios that drive policy.</p></div></li>
+                        <li><span>02</span><div><strong>Explain the score</strong><p>Show how DSCR, leverage, liquidity, margin, and operating history affect the result.</p></div></li>
+                        <li><span>03</span><div><strong>Stress the decision</strong><p>Adjust revenue, margin, and rates while preserving a human approval workflow.</p></div></li>
+                    </ol>
+                    <div class="tech-list"><span>React</span><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span><span>GCP</span></div>
+                    <a class="text-link" href="https://github.com/DeviousFate/Northstar-POC" target="_blank" rel="noopener noreferrer">Explore the repository <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="demo-frame northstar-demo reveal" role="img" aria-label="Representative Northstar Credit analyst workflow">
+                    <div class="demo-bar"><span class="demo-lights">● ● ●</span><span>northstar / underwriting</span><b>Representative workflow</b></div>
+                    <div class="northstar-app">
+                        <aside><strong>NORTHSTAR</strong><span class="active">Overview</span><span>Applications</span><span>Stress lab</span><span>Portfolio</span></aside>
+                        <div class="northstar-main">
+                            <div class="app-heading"><div><small>Credit request / NS-1042</small><h3>Meridian Fabrication</h3></div><span class="status-chip">Review</span></div>
+                            <div class="app-metrics"><div><small>DSCR</small><strong>1.42×</strong><i>+12 pts</i></div><div><small>Leverage</small><strong>2.8×</strong><i>+8 pts</i></div><div><small>Liquidity</small><strong>1.31×</strong><i>+6 pts</i></div></div>
+                            <div class="score-panel"><div class="score-ring"><span>78</span><small>/ 100</small></div><div><small>Policy result</small><strong>Conditional approval</strong><p>Visible score impacts and exception reasons keep the recommendation explainable.</p></div></div>
+                            <div class="stress-row"><span>Revenue scenario</span><div class="fake-slider"><i></i></div><strong>−10%</strong><b>DSCR 1.18×</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-section" id="galactic">
+            <div class="shell demo-layout demo-layout-reverse">
+                <div class="demo-copy reveal">
+                    <p class="demo-number">02 / Synchronized operations</p>
+                    <h2>Galactic Operations Console</h2>
+                    <p class="demo-lede">A GM and players share live mission state while the NaviComputer calculates a legal route, fuel requirement, and travel time.</p>
+                    <ol class="workflow-list">
+                        <li><span>01</span><div><strong>Resolve access</strong><p>NavData and clearance tiers determine which systems the crew can see and target.</p></div></li>
+                        <li><span>02</span><div><strong>Plot the route</strong><p>Grid routing accounts for regions, hyperlanes, realspace legs, and hyperdrive class.</p></div></li>
+                        <li><span>03</span><div><strong>Synchronize the table</strong><p>Foundry sockets update shared location, vessel state, warnings, and mission data.</p></div></li>
+                    </ol>
+                    <div class="tech-list"><span>JavaScript</span><span>Foundry VTT</span><span>Routing</span><span>Socket state</span><span>Node tests</span></div>
+                    <a class="text-link" href="https://github.com/DeviousFate/Galactic_Operations_Console" target="_blank" rel="noopener noreferrer">Explore the repository <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="demo-frame galactic-demo reveal" role="img" aria-label="Representative Galactic Operations Console navigation workflow">
+                    <div class="demo-bar"><span class="demo-lights">● ● ●</span><span>imperial operations / astrogation</span><b>Representative workflow</b></div>
+                    <div class="galactic-app">
+                        <div class="galactic-head"><strong>GALACTIC OPERATIONS CONSOLE</strong><span>ISB // SECURE</span></div>
+                        <div class="galactic-body">
+                            <div class="galaxy-map" aria-hidden="true">
+                                <span class="grid-label x">12</span><span class="grid-label y">H</span>
+                                <svg viewBox="0 0 520 310" role="img" aria-label="Plotted hyperspace route between three systems">
+                                    <path class="hyperlane" d="M50 250 C145 210 185 100 290 136 S410 80 480 42" />
+                                    <path class="route" d="M82 246 L285 138 L442 76" />
+                                    <circle cx="82" cy="246" r="7"/><circle cx="285" cy="138" r="7"/><circle cx="442" cy="76" r="8"/>
+                                    <text x="60" y="278">BOTHAN</text><text x="264" y="169">CORELLIA</text><text x="397" y="58">CORUSCANT</text>
+                                </svg>
+                            </div>
+                            <aside class="route-readout"><small>ROUTE SOLUTION</small><strong>3 grids</strong><dl><div><dt>Travel</dt><dd>31.4 hr</dd></div><div><dt>Fuel</dt><dd>7 units</dd></div><div><dt>Clearance</dt><dd class="ok">Granted</dd></div></dl><button type="button" tabindex="-1">ENGAGE TRANSIT</button></aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-section" id="rolesentry">
+            <div class="shell demo-layout">
+                <div class="demo-copy reveal">
+                    <p class="demo-number">03 / Application operations</p>
+                    <h2>RoleSentry</h2>
+                    <p class="demo-lede">Paste a job URL, extract the important details, and keep the opportunity’s status visible throughout the entire application process.</p>
+                    <ol class="workflow-list">
+                        <li><span>01</span><div><strong>Import</strong><p>Turn a listing URL into structured role, company, location, and source data.</p></div></li>
+                        <li><span>02</span><div><strong>Track</strong><p>Move applications through a focused pipeline from saved to offer or rejection.</p></div></li>
+                        <li><span>03</span><div><strong>Monitor</strong><p>A background worker checks whether source listings remain active.</p></div></li>
+                    </ol>
+                    <div class="tech-list"><span>Next.js</span><span>TypeScript</span><span>Express</span><span>MongoDB</span><span>Workers</span></div>
+                    <a class="text-link" href="https://github.com/DeviousFate/RoleSentry" target="_blank" rel="noopener noreferrer">Explore the repository <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="demo-frame rolesentry-demo reveal" role="img" aria-label="Representative RoleSentry application pipeline">
+                    <div class="demo-bar"><span class="demo-lights">● ● ●</span><span>rolesentry / pipeline</span><b>Representative workflow</b></div>
+                    <div class="role-app">
+                        <div class="role-head"><div><strong>RoleSentry</strong><span>12 active applications</span></div><button type="button" tabindex="-1">+ Import role</button></div>
+                        <div class="pipeline">
+                            <section><h3>Applied <span>3</span></h3><article><small>2 days ago</small><strong>Software Engineer</strong><p>Product Systems Co.</p><i>Listing active</i></article><article><small>5 days ago</small><strong>Junior Developer</strong><p>Meridian Labs</p><i>Listing active</i></article></section>
+                            <section><h3>Interview <span>2</span></h3><article class="priority"><small>Tomorrow · 10:30</small><strong>Full-stack Developer</strong><p>Northline Systems</p><i>Technical round</i></article></section>
+                            <section><h3>Decision <span>1</span></h3><article><small>Updated today</small><strong>Application Developer</strong><p>Atlas Operations</p><i>Follow up</i></article></section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-section" id="sw5e">
+            <div class="shell demo-layout demo-layout-reverse">
+                <div class="demo-copy reveal">
+                    <p class="demo-number">04 / Configurable rules automation</p>
+                    <h2>SW5e Variant Rules</h2>
+                    <p class="demo-lede">A GM enables only the rules the table wants. The module resolves compatible automation and keeps judgment-heavy decisions visible.</p>
+                    <ol class="workflow-list">
+                        <li><span>01</span><div><strong>Choose ownership</strong><p>Compatibility controls decide whether SWVR or another module provides a mechanic.</p></div></li>
+                        <li><span>02</span><div><strong>Automate safely</strong><p>Event hooks calculate wounds, armor, elevation, alignment, and other rule effects.</p></div></li>
+                        <li><span>03</span><div><strong>Keep the GM in control</strong><p>Eligibility prompts and logs preserve table judgment where rules require context.</p></div></li>
+                    </ol>
+                    <div class="tech-list"><span>JavaScript</span><span>Event hooks</span><span>Compatibility</span><span>Idempotency</span></div>
+                    <a class="text-link" href="https://github.com/DeviousFate/SW5e-Variant-Rules" target="_blank" rel="noopener noreferrer">Explore the repository <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="demo-frame rules-demo reveal" role="img" aria-label="Representative SW5e Variant Rules configuration and event log">
+                    <div class="demo-bar"><span class="demo-lights">● ● ●</span><span>swvr / automation</span><b>Representative workflow</b></div>
+                    <div class="rules-app">
+                        <div class="rules-config"><div class="rules-title"><strong>Variant Rules</strong><span>11 enabled</span></div><label><span><strong>Alternative Armor</strong><small>AC and damage reduction</small></span><i class="toggle on"></i></label><label><span><strong>Force Alignment</strong><small>Power use and deed log</small></span><i class="toggle on"></i></label><label><span><strong>Dismemberment</strong><small>GM-reviewed critical results</small></span><i class="toggle on"></i></label><label><span><strong>Tactical Initiative</strong><small>Shared initiative control</small></span><i class="toggle"></i></label></div>
+                        <div class="event-log"><small>LIVE AUTOMATION</small><article><i>14:32</i><div><strong>Alternative Armor</strong><p>Applied 3 DR to incoming vibroweapon damage.</p></div></article><article><i>14:33</i><div><strong>Force Alignment</strong><p>Dark-side power recorded. Disturbance pool updated.</p></div></article><article><i>14:34</i><div><strong>GM decision required</strong><p>Dismemberment eligibility prompt opened.</p></div></article></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-section" id="industrial-marking">
+            <div class="shell demo-layout">
+                <div class="demo-copy reveal">
+                    <p class="demo-number">05 / Custom-product workflow</p>
+                    <h2>Industrial Marking Configurator</h2>
+                    <p class="demo-lede">A buyer configures a specialized industrial tag, sees an immediate proof, and receives consistent pricing from shared business rules.</p>
+                    <ol class="workflow-list">
+                        <li><span>01</span><div><strong>Configure</strong><p>Select material, dimensions, category, marking method, and serialization.</p></div></li>
+                        <li><span>02</span><div><strong>Preview</strong><p>A font-fit algorithm keeps text legible inside a live SVG proof.</p></div></li>
+                        <li><span>03</span><div><strong>Quote</strong><p>Shared pricing logic and persisted product data produce a consistent handoff.</p></div></li>
+                    </ol>
+                    <div class="tech-list"><span>Node.js</span><span>MongoDB</span><span>SVG</span><span>PDF workflow</span></div>
+                    <a class="text-link" href="https://github.com/DeviousFate/industrial-marking-configurator" target="_blank" rel="noopener noreferrer">Explore the repository <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="demo-frame marking-demo reveal" role="img" aria-label="Representative Industrial Marking Configurator workflow">
+                    <div class="demo-bar"><span class="demo-lights">● ● ●</span><span>industrial marking / configurator</span><b>Representative workflow</b></div>
+                    <div class="marking-app">
+                        <div class="marking-controls"><small>BUILD YOUR MARKER</small><label>Material<strong>Brushed stainless steel</strong></label><label>Size<strong>4 × 2 inches</strong></label><label>Marking<strong>Laser engraved</strong></label><label>Quantity<strong>50 units</strong></label><div class="price"><span>Estimated total</span><strong>$286.00</strong></div></div>
+                        <div class="proof-area"><small>LIVE PROOF · ACTUAL RATIO</small><div class="metal-tag"><i></i><i></i><strong>CAUTION</strong><span>LOCK OUT BEFORE SERVICE</span><b>UNIT 04-A</b></div><p>Text fitted automatically · Proof ready</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-section compact-demo" id="velsar">
+            <div class="shell demo-layout demo-layout-reverse">
+                <div class="demo-copy reveal">
+                    <p class="demo-number">06 / Content engineering</p>
+                    <h2>Ashes of Velsar</h2>
+                    <p class="demo-lede">A complete adventure imports as a structured Foundry package rather than a loose folder of maps and notes.</p>
+                    <p>The build pipeline packages fifteen mapped scenes, journals, handouts, actors, encounter tokens, folders, and scene-to-journal pins into one coherent campaign module.</p>
+                    <div class="tech-list"><span>JavaScript</span><span>Foundry packs</span><span>Build tooling</span><span>Content validation</span></div>
+                    <a class="text-link" href="https://github.com/DeviousFate/Ashes-of-Velsar" target="_blank" rel="noopener noreferrer">Explore the repository <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="demo-frame velsar-demo reveal" role="img" aria-label="Representative Ashes of Velsar campaign package">
+                    <div class="demo-bar"><span class="demo-lights">● ● ●</span><span>ashes of velsar / compendium</span><b>Representative workflow</b></div>
+                    <div class="velsar-app"><div class="module-cover"><small>SW5e adventure</small><strong>ASHES<br>OF VELSAR</strong><span>Levels 1–4 · 4–6 players</span></div><div class="pack-list"><small>COMPLETE ADVENTURE</small><div><i>15</i><span><strong>Scenes</strong><small>Walls, doors, tokens, pins</small></span></div><div><i>16</i><span><strong>Campaign actors</strong><small>NPCs, portraits, encounters</small></span></div><div><i>01</i><span><strong>One-step import</strong><small>Structured folders and journals</small></span></div><button type="button" tabindex="-1">IMPORT ADVENTURE</button></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="shell contact-grid">
+                <div><p class="eyebrow">From repository to result</p><h2>Want to talk through the engineering?</h2></div>
+                <div><p>I’m happy to discuss architecture decisions, implementation tradeoffs, or how this experience could support your team’s next product.</p><a class="btn btn-primary" href="index.html#contact">Start a conversation <span aria-hidden="true">→</span></a></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="shell"><p>© <span data-year>2026</span> Thomas Cheek</p><p>Built with curiosity and a bias toward useful things.</p><a href="#main-content">Back to top ↑</a></div>
+    </footer>
+</body>
+</html>
